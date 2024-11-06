@@ -18,6 +18,10 @@
     gap: 20px;
 }
 
+.menu-options {
+    display: none;
+}
+
 .icon {
     width: 24px;
     height: 24px;

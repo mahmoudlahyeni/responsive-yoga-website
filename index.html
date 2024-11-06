@@ -1,145 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="desktop.css">
 </head>
+
 <body>
-    <header class="yoga-header">
-        <h1 class="yoga-logo">Yoga</h1>
-        <nav class="menu-icons">
-            <!-- Hidden checkbox input -->
-  <input type="checkbox" id="dark-mode-toggle">
-  
-  <!-- Label with image acting as the toggle -->
-  <label for="dark-mode-toggle">
-    <img src="./images/Vector.png" alt="Menu icon" class="icon" />
-  </label>
-          <img src="./images/ri_apps-2-line.png" alt="User profile icon" class="icon" />
-        </nav>
-      </header>
+  <header class="yoga-header">
+    <h1 class="yoga-logo">Yoga</h1>
+    <nav class="menu-icons">
+      <ul class="menu-options">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Health</a></li>
+        <li><a href="#">Routine</a></li>
+        <li><a href="#">Follow</a></li>
+      </ul>
+
+      <!-- Hidden checkbox input -->
+      <input type="checkbox" id="dark-mode-toggle">
+
+      <!-- Label with image acting as the toggle -->
+      <label for="dark-mode-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M10 7C9.9998 8.39064 10.4138 9.74983 11.1892 10.9042C11.9646 12.0586 13.0663 12.9559 14.3538 13.4816C15.6412 14.0073 17.0561 14.1376 18.4179 13.8559C19.7797 13.5742 21.0268 12.8933 22 11.9V12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2H12.1C11.434 2.65113 10.9051 3.42896 10.5445 4.28768C10.1838 5.1464 9.99869 6.06862 10 7ZM4 12C3.99927 13.785 4.59553 15.5189 5.69389 16.926C6.79226 18.333 8.32963 19.3323 10.0614 19.7648C11.7932 20.1974 13.6199 20.0383 15.2508 19.313C16.8818 18.5876 18.2233 17.3377 19.062 15.762C17.5694 16.1136 16.0118 16.0781 14.5368 15.6587C13.0619 15.2394 11.7185 14.4501 10.6342 13.3658C9.54992 12.2815 8.76065 10.9381 8.34128 9.46318C7.92192 7.98821 7.88636 6.43056 8.238 4.938C6.95758 5.62014 5.88678 6.63766 5.14026 7.88164C4.39373 9.12562 3.99958 10.5492 4 12Z"
+            fill="#220953" />
+        </svg>
+      </label>
       
-      <main>
-        <section class="hero-section">
-          <h2 class="hero-title">Choose Your <br /> Best  <span class="yoga-text">Yoga</span>  <br />Teacher</h2>
-          <p class="hero-description">Calm your mind and body with the best yoga teachers available, relax your day and stay positive.</p>
-          <img src="./images/Group.png" alt="Decorative element" class="icon" />
-          <button class="cta-button">
-            Get Started Free
-            <img src="./images/Vector (1).png" alt="Arrow icon" id="trdtr" class="icon" />
-          </button>
-          <div class="stats-container">
-            <div class="stat-item">
-              <p class="stat-number">300+</p>
-              <p class="stat-label">Yoga Class</p>
-            </div>
-            <div class="stat-item">
-              <p class="stat-number">40+</p>
-              <p class="stat-label">Participants</p>
-            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M6.5 11.5C5.90905 11.5 5.32389 11.3836 4.77792 11.1575C4.23196 10.9313 3.73588 10.5998 3.31802 10.182C2.90016 9.76412 2.56869 9.26804 2.34254 8.72208C2.1164 8.17611 2 7.59095 2 7C2 6.40905 2.1164 5.82389 2.34254 5.27792C2.56869 4.73196 2.90016 4.23588 3.31802 3.81802C3.73588 3.40016 4.23196 3.06869 4.77792 2.84254C5.32389 2.6164 5.90905 2.5 6.5 2.5C7.69347 2.5 8.83807 2.97411 9.68198 3.81802C10.5259 4.66193 11 5.80653 11 7C11 8.19347 10.5259 9.33807 9.68198 10.182C8.83807 11.0259 7.69347 11.5 6.5 11.5ZM7 21.5C5.80653 21.5 4.66193 21.0259 3.81802 20.182C2.97411 19.3381 2.5 18.1935 2.5 17C2.5 15.8065 2.97411 14.6619 3.81802 13.818C4.66193 12.9741 5.80653 12.5 7 12.5C8.19347 12.5 9.33807 12.9741 10.182 13.818C11.0259 14.6619 11.5 15.8065 11.5 17C11.5 18.1935 11.0259 19.3381 10.182 20.182C9.33807 21.0259 8.19347 21.5 7 21.5ZM17 11.5C16.4091 11.5 15.8239 11.3836 15.2779 11.1575C14.732 10.9313 14.2359 10.5998 13.818 10.182C13.4002 9.76412 13.0687 9.26804 12.8425 8.72208C12.6164 8.17611 12.5 7.59095 12.5 7C12.5 6.40905 12.6164 5.82389 12.8425 5.27792C13.0687 4.73196 13.4002 4.23588 13.818 3.81802C14.2359 3.40016 14.732 3.06869 15.2779 2.84254C15.8239 2.6164 16.4091 2.5 17 2.5C18.1935 2.5 19.3381 2.97411 20.182 3.81802C21.0259 4.66193 21.5 5.80653 21.5 7C21.5 8.19347 21.0259 9.33807 20.182 10.182C19.3381 11.0259 18.1935 11.5 17 11.5ZM17 21.5C15.8065 21.5 14.6619 21.0259 13.818 20.182C12.9741 19.3381 12.5 18.1935 12.5 17C12.5 15.8065 12.9741 14.6619 13.818 13.818C14.6619 12.9741 15.8065 12.5 17 12.5C18.1935 12.5 19.3381 12.9741 20.182 13.818C21.0259 14.6619 21.5 15.8065 21.5 17C21.5 18.1935 21.0259 19.3381 20.182 20.182C19.3381 21.0259 18.1935 21.5 17 21.5ZM6.5 9.5C7.16304 9.5 7.79893 9.23661 8.26777 8.76777C8.73661 8.29893 9 7.66304 9 7C9 6.33696 8.73661 5.70107 8.26777 5.23223C7.79893 4.76339 7.16304 4.5 6.5 4.5C5.83696 4.5 5.20107 4.76339 4.73223 5.23223C4.26339 5.70107 4 6.33696 4 7C4 7.66304 4.26339 8.29893 4.73223 8.76777C5.20107 9.23661 5.83696 9.5 6.5 9.5ZM7 19.5C7.66304 19.5 8.29893 19.2366 8.76777 18.7678C9.23661 18.2989 9.5 17.663 9.5 17C9.5 16.337 9.23661 15.7011 8.76777 15.2322C8.29893 14.7634 7.66304 14.5 7 14.5C6.33696 14.5 5.70107 14.7634 5.23223 15.2322C4.76339 15.7011 4.5 16.337 4.5 17C4.5 17.663 4.76339 18.2989 5.23223 18.7678C5.70107 19.2366 6.33696 19.5 7 19.5ZM17 9.5C17.663 9.5 18.2989 9.23661 18.7678 8.76777C19.2366 8.29893 19.5 7.66304 19.5 7C19.5 6.33696 19.2366 5.70107 18.7678 5.23223C18.2989 4.76339 17.663 4.5 17 4.5C16.337 4.5 15.7011 4.76339 15.2322 5.23223C14.7634 5.70107 14.5 6.33696 14.5 7C14.5 7.66304 14.7634 8.29893 15.2322 8.76777C15.7011 9.23661 16.337 9.5 17 9.5ZM17 19.5C17.663 19.5 18.2989 19.2366 18.7678 18.7678C19.2366 18.2989 19.5 17.663 19.5 17C19.5 16.337 19.2366 15.7011 18.7678 15.2322C18.2989 14.7634 17.663 14.5 17 14.5C16.337 14.5 15.7011 14.7634 15.2322 15.2322C14.7634 15.7011 14.5 16.337 14.5 17C14.5 17.663 14.7634 18.2989 15.2322 18.7678C15.7011 19.2366 16.337 19.5 17 19.5Z"
+          fill="#220953" />
+      </svg>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2 class="hero-title">Choose Your <br /> Best <span class="yoga-text">Yoga</span> <br />Teacher</h2>
+        <p class="hero-description">Calm your mind and body with the best yoga teachers available, relax your day and
+          stay positive.</p>
+        <img src="./images/Group.png" alt="Decorative element" class="icon" />
+        <button class="cta-button">
+          Get Started Free
+          <img src="./images/Vector (1).png" alt="Arrow icon" class="icon" />
+        </button>
+        <div class="stats-container">
+          <div class="stat-item">
+            <p class="stat-number">300+</p>
+            <p class="stat-label">Yoga Class</p>
           </div>
-          <img src="./images/home-yoga.png" alt="Yoga pose demonstration" class="hero-image" />
-        </section>
-      
-        <section class="feature-section">
-          <div class="feature-number">#01</div>
-          <div class="feature-content">
-            <img src="./images/list-yoga.png" alt="Feature illustration" class="feature-image" />
+          <div class="stat-item">
+            <p class="stat-number">40+</p>
+            <p class="stat-label">Participants</p>
           </div>
-          <p class="feature-description">Get a list of specific influencers in your niche at your fingertips so you can focus on managing your status.</p>
-          <div class="next-button">
-            <img src="./images/list-ellipse-img.png" alt="Left arrow" class="icon" />
-            Next
-            <img src="./images/Vector (2).png" alt="Right arrow" class="icon" />
+        </div>
+      </div>
+      <img src="./images/home-yoga.png" alt="Yoga pose demonstration" class="hero-image" />
+    </section>
+
+    <section class="feature-section">
+      <div class="feature-number">#01</div>
+      <div class="feature-content">
+        <img src="./images/list-yoga.png" alt="Feature illustration" class="feature-image" />
+      </div>
+      <p class="feature-description">Get a list of specific influencers in your </br> niche at your fingertips so you
+        can focus </br> on managing your status.</p>
+      <div class="next-button">
+        <img src="./images/list-ellipse-img.png" alt="Left arrow" class="icon" />
+        Next
+        <img src="./images/Vector (2).png" alt="Right arrow" class="icon" />
+      </div>
+    </section>
+
+    <section class="health-section">
+      <div class="health-content">
+        <h2 class="health-title">Bring Happiness To Good Health!</h2>
+        <p class="health-description">If you take care of your good health, take care of your mentality and lead a
+          healthy
+          life with positive thoughts every day.</p>
+        <button class="cta-button">
+          Let's Start
+          <img src="./images/Vector (1).png" alt="Arrow icon" class="icon" />
+        </button>
+      </div>
+
+      <div class="health-image-container">
+        <img src="./images/health-fitness.png" alt="Yoga practitioner" class="health-main-image" />
+        <div class="health-stat-box heart-rate-box">
+          <img src="./images/Description box icon.png" alt="Heart icon" class="stat-icon" />
+          <div class="stat-info">
+            <p class="stat-label">Heart Rate</p>
+            <p class="stat-value">168 bpm</p>
           </div>
-        </section>
-      
-        <section class="health-section">
-          <h2 class="health-title">Bring Happiness To Good Health!</h2>
-          <p class="health-description">If you take care of your good health, take care of your mentality and lead a healthy life with positive thoughts every day.</p>
-          <button class="cta-button">
-            Let's Start
-            <img src="./images/Vector (1).png" alt="Arrow icon" class="icon" />
-          </button>
-          <div class="health-image-container">
-            <img src="./images/health-fitness.png" alt="Yoga practitioner" class="health-main-image" />
-            <div class="health-stat-box heart-rate-box">
-              <img src="./images/Description box icon.png" alt="Heart icon" class="stat-icon" />
-              <div class="stat-info">
-                <p class="stat-label">Heart Rate</p>
-                <p class="stat-value">168 bpm</p>
-              </div>
-            </div>
-            <div class="health-stat-box courses-box">
-              <div class="stat-info">
-                <p class="stat-value">500+</p>
-                <p class="stat-label">Free Courses</p>
-              </div>
-            </div>
+        </div>
+        <div class="health-stat-box courses-box">
+          <div class="stat-info">
+            <p class="stat-value">500+</p>
+            <p class="stat-label">Free Courses</p>
           </div>
-        </section>
-      
-        <section class="routine-section">
-          <h2 class="routine-title">Anytime, Any Place, Any Workout</h2>
-          <p class="routine-description">Take your routine at any time of your day, with the new videos and with the teachers who will guide you.</p>
-          <button class="cta-button">
-            Get Started Free
-            <img src="./images/Vector (1).png" alt="Arrow icon" class="icon" />
-          </button>
-          <img src="./images/Images routine.png" alt="Yoga routine demonstration" class="routine-image" />
-        </section>
-      
-        <section class="instagram-section">
-          <h2 class="instagram-title">Follow Us On Instagram #YOGA</h2>
-          <img src="./images/Button follow.png" alt="Instagram profile" class="instagram-profile" />
-          <div class="instagram-gallery">
-            <img src="./images/follow-yoga-1.png" alt="Instagram post 1" class="gallery-image" />
-            <img src="./images/follow-yoga-2.png" alt="Instagram post 2" class="gallery-image" />
-            
-          </div>
-          <div><img src="./images/Images follow group 2.png" alt="Instagram post 3" ></div>
-          
-        </section>
-      
-        <section class="newsletter-section">
-          <h2 class="newsletter-title">Join our newsletter</h2>
-          <p class="newsletter-description">Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more. Just enter your email.</p>
-          <form class="newsletter-form">
-            <label for="email-input" class="visually-hidden">Enter your email</label>
-            <input type="email" id="email-input" class="newsletter-input" placeholder="For latest update send mail" aria-label="Enter your email" />
-            <button type="submit" class="newsletter-button">
-              Subscribe
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f07de48572e764eae9ae0766287d841f016c175f3a4c7b0ff0581022bcb8716f?placeholderIfAbsent=true&apiKey=35da213c551b4d969684aea512244c0d" alt="Arrow icon" class="icon" />
-            </button>
-          </form>
-        </section>
-      </main>
-      
-      <footer class="footer">
+        </div>
+      </div>
+    </section>
+
+    <section class="routine-section">
+      <div class="routine-content">
+        <h2 class="routine-title">Anytime, Any Place, Any Workout</h2>
+        <p class="routine-description">Take your routine at any time of your day, with the new videos and with the
+          teachers who will guide you.</p>
+        <button class="cta-button">
+          Get Started Free
+          <img src="./images/Vector (1).png" alt="Arrow icon" class="icon" />
+        </button>
+      </div>
+      <img src="./images/Images routine.png" alt="Yoga routine demonstration" class="routine-image" />
+    </section>
+
+    <section class="instagram-section">
+      <h2 class="instagram-title">Follow Us On Instagram #YOGA</h2>
+      <img src="./images/Button follow.png" alt="Instagram profile" class="instagram-profile" />
+      <div class="instagram-gallery">
+        <img src="./images/follow-yoga-1.png" alt="Instagram post 1" class="gallery-image" />
+        <img src="./images/follow-yoga-2.png" alt="Instagram post 2" class="gallery-image" />
+
+      </div>
+      <div><img src="./images/Images follow group 2.png" alt="Instagram post 3"></div>
+
+    </section>
+
+    <section class="newsletter-section">
+      <h2 class="newsletter-title">Join our newsletter</h2>
+      <p class="newsletter-description">Subscribe to our newsletter to be aware of many things on discounts, gifts,
+        training and much more. Just enter your email.</p>
+      <form class="newsletter-form">
+        <label for="email-input" class="visually-hidden">Enter your email</label>
+        <input type="email" id="email-input" class="newsletter-input" placeholder="For latest update send mail"
+          aria-label="Enter your email" />
+        <button type="submit" class="newsletter-button">
+          Subscribe
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f07de48572e764eae9ae0766287d841f016c175f3a4c7b0ff0581022bcb8716f?placeholderIfAbsent=true&apiKey=35da213c551b4d969684aea512244c0d"
+            alt="Arrow icon" class="icon" />
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-header">
+      <div>
         <h2 class="footer-logo">Yoga</h2>
         <p class="footer-description">Take care of your health and your mind with the best Yoga classes.</p>
-        
-        <h3 class="footer-section-title">Address</h3>
-        <p class="footer-info">12345 M/01 Sol Avenue, Lima, Peru</p>
-        
-        <h3 class="footer-section-title">Contact</h3>
-        <p class="footer-info">+123 456 7890<br />yoga@email.com</p>
-        
-        <h3 class="footer-section-title">Office</h3>
-        <p class="footer-info">Monday - Saturday<br />9AM - 10PM</p>
-        
-        <hr class="footer-divider" />
-        
-        <div class="footer-social">
-          <img src="./images/Social footer.png" alt="Social media icons" />
+      </div>
+
+      <div class="footer-content">
+        <div>
+          <h3 class="footer-section-title">Address</h3>
+          <p class="footer-info">12345 M/01 Sol </br> Avenue, Lima, Peru</p>
         </div>
-        
-        <div class="footer-copyright">
-          <img src="./images/Vector (3).png" alt="Copyright icon" class="copyright-icon" />
-          <p>Copyright Bedimcode. All rights reserved</p>
+
+        <div>
+          <h3 class="footer-section-title">Contact</h3>
+          <p class="footer-info">+123 456 7890<br />yoga@email.com</p>
         </div>
-      </footer>
+
+        <div>
+          <h3 class="footer-section-title">Office</h3>
+          <p class="footer-info">Monday - Saturday<br />9AM - 10PM</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="footer-divider" />
+
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <img src="./images/Social footer.png" alt="Social media icons" />
+      </div>
+
+      <div class="footer-copyright">
+        <img src="./images/Vector (3).png" alt="Copyright icon" class="copyright-icon" />
+        <p>Copyright Bedimcode. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
