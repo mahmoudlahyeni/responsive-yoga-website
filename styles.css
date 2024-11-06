@@ -1,0 +1,355 @@
+.yoga-header {
+    background: #f5f0ff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 24px;
+}
+
+.yoga-logo {
+    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font: 500 20px Lora, sans-serif;
+}
+
+.menu-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.hero-section {
+    background: #f5f0ff;
+    padding: 32px 28px 0;
+    text-align: center;
+    color: #220953;
+}
+
+.hero-title {
+    font: 44px/59px Lora, sans-serif;
+    margin-bottom: 19px;
+}
+
+.hero-description {
+    color: #4b3e65;
+    font: 400 15px Poppins, sans-serif;
+    margin-bottom: 8px;
+}
+
+.cta-button {
+    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+    border-radius: 64px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 28px;
+    font: 500 15px Poppins, sans-serif;
+    margin: 32px auto;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px auto;
+    max-width: 199px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font: 28px Lora, sans-serif;
+}
+
+.stat-label {
+    font: 400 13px Poppins, sans-serif;
+}
+
+.hero-image {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.feature-section {
+    background: #f5f0ff;
+    padding: 25px 26px;
+}
+
+.feature-number {
+    color: #220953;
+    font: 500 28px Lora, sans-serif;
+}
+
+.feature-content {
+    background: #e5d9fd;
+    border-radius: 200px;
+    padding: 0 25px 13px;
+    text-align: center;
+}
+
+.feature-image {
+    width: 180px;
+    margin-top: -25px;
+}
+
+.feature-description {
+    color: #4b3e65;
+    font: 400 15px Poppins, sans-serif;
+    margin-top: 46px;
+    text-align: center;
+}
+
+.next-button {
+    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font: 500 15px Poppins, sans-serif;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.health-section {
+    background: #f5f0ff;
+    padding: 0 28px;
+    text-align: center;
+}
+
+.health-title {
+    color: #220953;
+    font: 400 32px Lora, sans-serif;
+    margin-bottom: 24px;
+}
+
+.health-description {
+    color: #4b3e65;
+    font: 400 15px Poppins, sans-serif;
+    margin-bottom: 32px;
+}
+
+.health-image-container {
+    position: relative;
+    margin-top: 31px;
+}
+
+.health-main-image {
+    width: 100%;
+}
+
+.health-stat-box {
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    position: absolute;
+}
+
+.heart-rate-box {
+    top: 0;
+    left: 8px;
+}
+
+.courses-box {
+    bottom: 32px;
+    right: 8px;
+}
+
+.stat-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+}
+
+.stat-info {
+    text-align: left;
+}
+
+.stat-label {
+    color: #220953;
+    font: 500 13px Poppins, sans-serif;
+}
+
+.stat-value {
+    color: #000;
+    font: 400 12px Poppins, sans-serif;
+}
+
+.routine-section {
+    background: #f5f0ff;
+    padding: 0 31px;
+    text-align: center;
+}
+
+.routine-title {
+    color: #220953;
+    font: 32px Lora, sans-serif;
+    margin-bottom: 24px;
+}
+
+.routine-description {
+    color: #4b3e65;
+    font: 400 15px Poppins, sans-serif;
+    margin-bottom: 32px;
+}
+
+.routine-image {
+    width: 100%;
+    margin-top: 32px;
+    border-radius: 0;
+}
+
+.instagram-section {
+    background: #f5f0ff;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.instagram-title {
+    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font: 400 32px Lora, sans-serif;
+    margin-bottom: 24px;
+}
+
+.instagram-profile {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin: 24px auto;
+}
+
+.instagram-gallery {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.gallery-image {
+    width: 140px;
+    object-fit: cover;
+}
+
+.newsletter-section {
+    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+    border-radius: 32px;
+    color: #fff;
+    padding: 44px 16px;
+    text-align: center;
+    margin: 32px 24px 48px;
+}
+
+.newsletter-title {
+    font: 28px Lora, sans-serif;
+    margin-bottom: 12px;
+}
+
+.newsletter-description {
+    color: #f5f0ff;
+    font: 400 15px Poppins, sans-serif;
+    margin-bottom: 24px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.newsletter-input {
+    background: #fff;
+    border-radius: 48px;
+    color: #a197b4;
+    font: 400 12px Poppins, sans-serif;
+    padding: 23px 24px;
+}
+
+.newsletter-button {
+    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+    border-radius: 64px;
+    box-shadow: 0 4px 12px rgba(91, 10, 255, 0.25);
+    color: #fff;
+    font: 500 15px Poppins, sans-serif;
+    padding: 20px 0;
+}
+
+.footer {
+    background: #1e0849;
+    color: #a197b4;
+    font: 400 15px Poppins, sans-serif;
+    padding: 48px 24px 32px;
+}
+
+.footer-logo {
+    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font: 400 20px Lora, sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    margin-bottom: 40px;
+}
+
+.footer-section-title {
+    color: #fff;
+    font: 400 20px Lora, sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    margin-bottom: 40px;
+}
+
+.footer-divider {
+    background-color: #a197b4;
+    height: 1px;
+    margin: 39px 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.footer-social-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.copyright-icon {
+    width: 13px;
+    height: 13px;
+    margin-right: 4px;
+}
+.yoga-text {
+    display: inline-block;
+    background: linear-gradient(to right, #FF1493, #a914ff);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    transform: rotate(8deg);
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(255, 105, 180, 0.3);
+    position: relative;
+}
