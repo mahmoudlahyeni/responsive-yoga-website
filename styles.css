@@ -353,3 +353,97 @@
     box-shadow: 2px 2px 10px rgba(255, 105, 180, 0.3);
     position: relative;
 }
+.stat-label{
+   
+    color:#D1C0F1;
+}
+
+   /* Hide the checkbox input */
+   #dark-mode-toggle {
+    display: none;
+  }
+
+
+
+  /* Use :has() to target parent element based on checkbox state */
+  body:has(#dark-mode-toggle:checked) {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  /* Update sections for dark mode */
+  body:has(#dark-mode-toggle:checked) .hero-section {
+    background: #2c2c2c;
+    color: #e0e0e0;
+  }
+    /* Update sections for dark mode */
+    body:has(#dark-mode-toggle:checked) .yoga-header {
+        background: #2c2c2c;
+        color: #e0e0e0;
+      }
+  /* Update sections for dark mode */
+  body:has(#dark-mode-toggle:checked) .feature-section{
+    background: #2c2c2c;
+    color: #e0e0e0;
+  }
+    /* Update sections for dark mode */
+    body:has(#dark-mode-toggle:checked) .health-section{
+        background: #2c2c2c;
+        color: #e0e0e0;
+      }
+          /* Update sections for dark mode */
+    body:has(#dark-mode-toggle:checked) .routine-section{
+        background: #2c2c2c;
+        color: #e0e0e0;
+      }
+      
+      body:has(#dark-mode-toggle:checked) .instagram-section{
+        background: #2c2c2c;
+        color: #e0e0e0;
+      }
+  body:has(#dark-mode-toggle:checked) .cta-button {
+    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+    color: #fff;
+  }
+
+  body:has(#dark-mode-toggle:checked) .footer {
+    background: #2c2c2c;
+    color: #ddd;
+  }
+  body:has(#dark-mode-toggle:checked) .feature-content {
+    background: #372A51;
+
+  }
+  body:has(#dark-mode-toggle:checked) .health-stat-box{
+    background: #372A51;
+
+
+  }
+
+  body:has(#dark-mode-toggle:checked) .stat-value{
+    color: #FF52AF;
+
+  }
+  body:has(#dark-mode-toggle:checked) .footer-logo {
+    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+
+
+  /* Yoga text styling */
+  .yoga-text {
+    display: inline-block;
+    background: linear-gradient(to right, #FF1493, #a914ff);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    transform: rotate(8deg);
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(255, 105, 180, 0.3);
+    position: relative;
+  }
+
+
