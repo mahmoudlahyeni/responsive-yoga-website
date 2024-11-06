@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lora;
+}
+
+body { 
+    background: #f5f0ff;
+}
+
 .yoga-header {
     background: #f5f0ff;
     display: flex;
@@ -18,9 +29,21 @@
     gap: 20px;
 }
 
+.menu-options {
+    display: none;
+}
+
 .icon {
     width: 24px;
     height: 24px;
+}
+
+#theme { 
+    fill: #220953
+}
+
+#menu {
+    fill: #220953
 }
 
 .hero-section {
@@ -30,15 +53,21 @@
     color: #220953;
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
 .hero-title {
+    color: var(--title-color, #220953);
     font: 44px/59px Lora, sans-serif;
-    margin-bottom: 19px;
 }
 
 .hero-description {
-    color: #4b3e65;
+    color: var(--text-color, #4B3E65);
     font: 400 15px Poppins, sans-serif;
-    margin-bottom: 8px;
 }
 
 .cta-button {
@@ -50,14 +79,13 @@
     gap: 4px;
     padding: 16px 28px;
     font: 500 15px Poppins, sans-serif;
-    margin: 32px auto;
+    border-color: transparent;
 }
 
 .stats-container {
     display: flex;
-    justify-content: space-between;
-    margin: 32px auto;
-    max-width: 199px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .stat-item {
@@ -65,10 +93,12 @@
 }
 
 .stat-number {
+    color: var(--title-color, #220953);
     font: 28px Lora, sans-serif;
 }
 
 .stat-label {
+    color: var(--title-color, #220953);
     font: 400 13px Poppins, sans-serif;
 }
 
@@ -96,11 +126,12 @@
 
 .feature-image {
     width: 180px;
-    margin-top: -25px;
+    position: relative;
+    top: 15px;
 }
 
 .feature-description {
-    color: #4b3e65;
+    color: var(--text-color, #4B3E65);
     font: 400 15px Poppins, sans-serif;
     margin-top: 46px;
     text-align: center;
@@ -122,6 +153,13 @@
     text-align: center;
 }
 
+.health-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .health-title {
     color: #220953;
     font: 400 32px Lora, sans-serif;
@@ -129,7 +167,7 @@
 }
 
 .health-description {
-    color: #4b3e65;
+    color: var(--text-color, #4B3E65);
     font: 400 15px Poppins, sans-serif;
     margin-bottom: 32px;
 }
@@ -188,6 +226,13 @@
     text-align: center;
 }
 
+.routine-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .routine-title {
     color: #220953;
     font: 32px Lora, sans-serif;
@@ -195,15 +240,21 @@
 }
 
 .routine-description {
-    color: #4b3e65;
+    color: var(--text-color, #4B3E65);
     font: 400 15px Poppins, sans-serif;
     margin-bottom: 32px;
 }
 
+.routine-images {
+    display: flex;
+    flex-direction: column;
+}
+
 .routine-image {
-    width: 100%;
-    margin-top: 32px;
-    border-radius: 0;
+    max-width: 100%;
+    max-height: 30%;
+    border-radius: 192px;
+    border: 10px solid var(--body-color, #F5F0FF);    
 }
 
 .instagram-section {
@@ -271,15 +322,22 @@
     color: #a197b4;
     font: 400 12px Poppins, sans-serif;
     padding: 23px 24px;
+    border-color: transparent;
 }
 
 .newsletter-button {
-    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
     border-radius: 64px;
-    box-shadow: 0 4px 12px rgba(91, 10, 255, 0.25);
+    box-shadow: 0px 4px 12px 0px rgba(91, 10, 255, 0.25);
     color: #fff;
     font: 500 15px Poppins, sans-serif;
     padding: 20px 0;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
 }
 
 .footer {
@@ -300,6 +358,7 @@
 
 .footer-description {
     margin-bottom: 40px;
+    font-family: Poppins;
 }
 
 .footer-section-title {
@@ -310,6 +369,7 @@
 
 .footer-info {
     margin-bottom: 40px;
+    font-family: Poppins;
 }
 
 .footer-divider {
@@ -335,6 +395,7 @@
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    font-family: Poppins;
 }
 
 .copyright-icon {
@@ -342,6 +403,7 @@
     height: 13px;
     margin-right: 4px;
 }
+
 .yoga-text {
     display: inline-block;
     background: linear-gradient(to right, #FF1493, #a914ff);
@@ -353,97 +415,114 @@
     box-shadow: 2px 2px 10px rgba(255, 105, 180, 0.3);
     position: relative;
 }
-.stat-label{
-   
-    color:#D1C0F1;
+
+/* Hide the checkbox input */
+#dark-mode-toggle {
+  display: none;
 }
 
-   /* Hide the checkbox input */
-   #dark-mode-toggle {
-    display: none;
-  }
+/* Use :has() to target parent element based on checkbox state */
+body:has(#dark-mode-toggle:checked) {
+  background: var(--dark---body-color, #14092A);
+  color: #e0e0e0;
+}
 
+/* Update sections for dark mode */
+body:has(#dark-mode-toggle:checked) .hero-section {
+  background: var(--dark---body-color, #14092A);
+  color: #e0e0e0;
+}
 
-
-  /* Use :has() to target parent element based on checkbox state */
-  body:has(#dark-mode-toggle:checked) {
-    background-color: #121212;
+/* Update sections for dark mode */
+body:has(#dark-mode-toggle:checked) .yoga-header {
+    background: var(--dark---body-color, #14092A);
     color: #e0e0e0;
-  }
+}
 
-  /* Update sections for dark mode */
-  body:has(#dark-mode-toggle:checked) .hero-section {
-    background: #2c2c2c;
+/* Update sections for dark mode */
+body:has(#dark-mode-toggle:checked) .feature-section{
+  background: var(--dark---body-color, #14092A);
+  color: #e0e0e0;
+}
+
+/* Update sections for dark mode */
+body:has(#dark-mode-toggle:checked) .health-section{
+    background: var(--dark---body-color, #14092A);
     color: #e0e0e0;
-  }
-    /* Update sections for dark mode */
-    body:has(#dark-mode-toggle:checked) .yoga-header {
-        background: #2c2c2c;
-        color: #e0e0e0;
-      }
-  /* Update sections for dark mode */
-  body:has(#dark-mode-toggle:checked) .feature-section{
-    background: #2c2c2c;
+}
+
+/* Update sections for dark mode */
+body:has(#dark-mode-toggle:checked) .routine-section{
+    background: var(--dark---body-color, #14092A);
     color: #e0e0e0;
-  }
-    /* Update sections for dark mode */
-    body:has(#dark-mode-toggle:checked) .health-section{
-        background: #2c2c2c;
-        color: #e0e0e0;
-      }
-          /* Update sections for dark mode */
-    body:has(#dark-mode-toggle:checked) .routine-section{
-        background: #2c2c2c;
-        color: #e0e0e0;
-      }
+}
       
-      body:has(#dark-mode-toggle:checked) .instagram-section{
-        background: #2c2c2c;
-        color: #e0e0e0;
-      }
-  body:has(#dark-mode-toggle:checked) .cta-button {
-    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
-    color: #fff;
-  }
+body:has(#dark-mode-toggle:checked) .instagram-section{
+  background: var(--dark---body-color, #14092A);
+  color: #e0e0e0;
+}
 
-  body:has(#dark-mode-toggle:checked) .footer {
-    background: #2c2c2c;
-    color: #ddd;
-  }
-  body:has(#dark-mode-toggle:checked) .feature-content {
-    background: #372A51;
+body:has(#dark-mode-toggle:checked) .cta-button {
+  background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+  color: #fff;
+}
 
-  }
-  body:has(#dark-mode-toggle:checked) .health-stat-box{
-    background: #372A51;
+body:has(#dark-mode-toggle:checked) .footer {
+  background: var(--dark---body-color, #14092A);
+  color: #ddd;
+}
+
+body:has(#dark-mode-toggle:checked) .feature-content {
+  background: #372A51;
+}
+
+body:has(#dark-mode-toggle:checked) .health-stat-box{
+  background: #372A51;
+}
+
+body:has(#dark-mode-toggle:checked) .stat-value{
+  color: #FF52AF;
+}
+
+body:has(#dark-mode-toggle:checked) .footer-logo {
+  background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body:has(#dark-mode-toggle:checked) .hero-title {
+    color: var(--dark---title-color, #D1C0F1);
+}
+
+body:has(#dark-mode-toggle:checked) .health-title {
+    color: var(--dark---title-color, #D1C0F1);
+}
+
+body:has(#dark-mode-toggle:checked) .routine-title {
+    color: var(--dark---title-color, #D1C0F1);
+}
+
+body:has(#dark-mode-toggle:checked) #theme {
+    fill: var(--dark---title-color, #D1C0F1);
+}
+
+body:has(#dark-mode-toggle:checked) #menu {
+    fill: var(--dark---title-color, #D1C0F1);
+}
 
 
-  }
-
-  body:has(#dark-mode-toggle:checked) .stat-value{
-    color: #FF52AF;
-
-  }
-  body:has(#dark-mode-toggle:checked) .footer-logo {
-    background: linear-gradient(73deg, #ff52af 11.6%, #9f53ff 83.86%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-
-
-  /* Yoga text styling */
-  .yoga-text {
-    display: inline-block;
-    background: linear-gradient(to right, #FF1493, #a914ff);
-    color: white;
-    padding: 5px 15px;
-    border-radius: 8px;
-    transform: rotate(8deg);
-    transition: all 0.3s ease;
-    box-shadow: 2px 2px 10px rgba(255, 105, 180, 0.3);
-    position: relative;
-  }
+/* Yoga text styling */
+.yoga-text {
+  display: inline-block;
+  background: linear-gradient(to right, #FF1493, #a914ff);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 8px;
+  transform: rotate(8deg);
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(255, 105, 180, 0.3);
+  position: relative;
+}
 
 
