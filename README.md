@@ -1,5 +1,15 @@
-A html  responsive-yoga-website. this README file has been edited.
+# responsive-yoga-website
 
-Created by Mr. .
+A html + css responsive-yoga-website based on Figma File:
 
-Copyrighted by Mahmoud Lahyani and vinicius.
+https://www.figma.com/community/file/1229610063156797225
+
+
+# Designer
+
+- Young Kim
+
+## Developers
+
+- Mahmoud Lahyani
+- Vinicius Marson
