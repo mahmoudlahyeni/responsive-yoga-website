@@ -61,6 +61,20 @@
         gap: 64px;
     }
 
+    .stat-number {
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .stat-label {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
     .hero-images {
         display: flex;
         flex-direction: column;
@@ -78,8 +92,24 @@
     /* Feature section */
     .feature-section{
         display: flex;
-        justify-content: center;
-        gap: 48px;
+        justify-content: space-between;
+    }
+
+    .feature-number {
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .feature-content {
+        width: 400px;
+        height: 180px;
+    }
+
+    .feature-image {
+        width: 350px;
+        height: 217.875px;
     }
 
 
@@ -106,17 +136,51 @@
 
     /* Routine Section */
     .routine-section {
-        display: flex;
+        flex-direction: row;
     }
 
     .routine-images {
-        max-height: 50vh;
         justify-content: center;
         align-items: center;
     }
 
     .routine-image {
         max-height: 90%;
+    }
+
+    .instagram-gallery {
+        justify-content: space-between;
+    }
+    
+    .instagram-gallery-2 {
+        margin-top: 64px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .gallery-image {
+        max-width: 30%;
+        border-radius: 192px;
+        border: 5px solid var(--first-color-light, #E5D9FD);
+    }
+    
+    #yoga2 {
+        margin-top: 0px;
+    }
+    
+    #yoga3 {
+        transform: rotate(15deg);
+    }
+    
+    #yoga4 {
+        transform: rotate(-15deg);
+    }
+
+    .newsletter-title {
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     /* Footer */
