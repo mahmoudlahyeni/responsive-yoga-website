@@ -1,7 +1,5 @@
 @media (min-width: 378px) {
     main {
-        display: flex;
-        flex-direction: column;
         padding-left: 5%;
         padding-right: 5%;
         gap: 96px;
@@ -24,7 +22,6 @@
     }
 
     .menu-options > li > a {
-        color: var(--title-color, #220953);
         font-family: Poppins;
         font-size: 16px;
         font-style: normal;
@@ -33,13 +30,21 @@
         text-decoration: none;
     }
 
+    body:has(#dark-mode-toggle:checked) .menu-options > li > a {
+        color: var(--dark---title-color, #D1C0F1);
+    }
+
     .menu-icons {
         display: flex;
         gap: 72px;
     }
 
+    #menu {
+        display: none;
+    }
+
     .hero-section {
-        display: flex;
+        flex-direction: row;
         text-align: left;
     }
 
@@ -54,7 +59,6 @@
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         /* D - biggest-font-size */
         -webkit-text-stroke-width: 1;
-        -webkit-text-stroke-color: #000;
         font-family: Lora;
         font-size: 96px;
         font-style: normal;
@@ -67,9 +71,18 @@
         gap: 64px;
     }
 
-    .hero-section > img {
+    .hero-images {
+        display: flex;
+        flex-direction: column;
         max-width: 50%;
-        height: 75vh;
+        max-height: 85vh;
+        align-items: end;
+        padding: 0;
+    }
+
+    .hero-section > img {
+      width: auto;
+      height: auto;
     }
 
     /* Feature section */
@@ -93,7 +106,6 @@
     }
 
     .health-title {
-        color: var(--title-color, #220953);
         /* D - bigger-font-size */
         font-family: Lora;
         font-size: 64px;
@@ -118,12 +130,12 @@
     }
 
     .footer-header {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 
     .footer-content {
-        display: flex;
+        flex-direction: row;
         gap: 72px;
     }
 
