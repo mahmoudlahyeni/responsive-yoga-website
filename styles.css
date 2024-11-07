@@ -227,7 +227,6 @@ body:has(#close-menu-toggle:checked) .header-modal {
 .feature-image {
     width: 180px;
     position: relative;
-    top: 5px;
 }
 
 .feature-description {
@@ -325,6 +324,9 @@ body:has(#close-menu-toggle:checked) .header-modal {
 }
 
 .routine-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     background: transparent;
     text-align: center;
 }
@@ -347,14 +349,15 @@ body:has(#close-menu-toggle:checked) .header-modal {
 }
 
 .routine-images {
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding: 40px;
 }
 
 .routine-image {
-    max-width: 100%;
-    max-height: 30%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 192px;
     border: 10px solid var(--body-color, #F5F0FF);    
 }
@@ -363,6 +366,40 @@ body:has(#close-menu-toggle:checked) .header-modal {
     position: relative;
     top: -40px;
     left: 40px;
+}
+
+.routine-image-label {
+    display: inline-flex;
+    padding: 12px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 16px;
+    background: var(--container-color, #FFF);
+
+    position: absolute ;
+}
+
+.routine-image-label > span {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#quality {
+    top: 20px;
+    left: 50vw;
+}
+
+#professional {
+    top: 100vw;
 }
 
 .instagram-section {
@@ -430,11 +467,34 @@ body:has(#close-menu-toggle:checked) .header-modal {
     display: flex;
     gap: 16px;
     margin-top: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-gallery-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-image {
-    width: 140px;
-    object-fit: cover;
+    max-width: 30%;
+    border-radius: 192px;
+    border: 5px solid var(--first-color-light, #E5D9FD);
+}
+
+#yoga2 {
+    margin-top: 62px;
+}
+
+#yoga3 {
+    transform: rotate(15deg);
+}
+
+#yoga4 {
+    transform: rotate(-15deg);
 }
 
 .newsletter-section {
